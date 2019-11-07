@@ -4,18 +4,18 @@ using namespace std;
 
 int main() {
 
-    int n,i;
-    cout << "masukkan nilai x: ";
+    int n,a;
+    cout << "masukkan nilai n: ";
     cin >> n;
-    for(i=0; i<=n; i++){
-        if(i==0){
-            i=i+2;
+    for(a=0; a<=n; a++){
+        if(a==0){
+            a=a+2;
             cout<<"F (x)= 1 ";
         }
-        if(i%2==0){
-            cout << "-1/" << i << " ";
+        if(a%2==0){
+            cout << "-1/" << a << " ";
         }else{
-            cout << "+1/" << i << " ";
+            cout << "+1/" << a << " ";
         }
     }
 return 0;
