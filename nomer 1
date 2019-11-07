@@ -1,22 +1,37 @@
 #include <iostream>
-
 using namespace std;
 
 int main() {
-
-    int n,a;
+   int n,z;
     cout << "masukkan nilai n: ";
     cin >> n;
-    for(a=0; a<=n; a++){
-        if(a==0){
-            a=a+2;
+    for(z=0; z<=n; z++){
+        if(z==0){
+            z=z+2;
             cout<<"F (x)= 1 ";
         }
-        if(a%2==0){
-            cout << "-1/" << a << " ";
+        if(z%2==0){
+            cout << "-1/" << z << " ";
         }else{
-            cout << "+1/" << a << " ";
+            cout << "+1/" << z << " ";
         }
     }
-return 0;
-}
+
+    float rumus,jumlah,total;
+    cout<<"\n";
+    jumlah=0;
+    total=0;
+    rumus=-1;
+    for(int z=1; z<=n; z++){
+    rumus=(rumus*(-1));
+    total=rumus/z;
+    jumlah= jumlah + total;
+    if(z==1)
+    cout<<"("<<total<<")";
+    if(z>1)
+    cout<<"+("<<total<<")";
+    }
+    cout << "\n hasil perhitungan = " << jumlah;
+    
+    return 0;
+} 
