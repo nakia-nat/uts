@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    string nama;
+    int uts,uas,tugas,na,i;
+    for (i=1; i<=20; i++){
+        cout << endl;
+        cout << endl;
+        cout << "Mahasiswa yang ke-" << i <<endl;
+        cout << "Nama : ";
+        cin >> nama;
+        cout << "Nilai uts : ";
+        cin >> uts;
+        cout << "Nilai uas : ";
+        cin >> uas;
+        cout << "Nilai tugas : ";
+        cin >> tugas;
+        na = ((uts*30)/100)+((uas*40)/100)+((tugas*30)/100);
+        cout << endl;
+        cout << "Nama : " << nama << endl;
+        cout << "Nilai akhir : " << na << endl;
+        if(na <70){
+        cout << "Indeks Nilai D";
+        } else if(na >=70 and na < 80){
+            cout << "Indeks Nilai C";
+        } else if(na >=80 and na < 90){
+            cout << "Indeks Nilai B";
+        } else if(na >=90){
+            cout << "Indeks Nilai A";
+        }
+    }
+   return 0; 
+}
